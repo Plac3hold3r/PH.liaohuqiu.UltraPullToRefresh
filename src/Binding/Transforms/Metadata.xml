@@ -1,9 +1,25 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p0']" name="managedName">frame</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p1']" name="managedName">content</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p2']" name="managedName">header</attr>
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='onRefreshBegin']/parameter[@name='p0']" name="managedName">frame</attr>
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p0']" name="managedName">frame</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p1']" name="managedName">isUnderTouch</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p2']" name="managedName">status</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p3']" name="managedName">ptrIndicator</attr>
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshBegin']/parameter[@name='p0']" name="managedName">frame</attr>
+
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshComplete']/parameter[@name='p0']" name="managedName">frame</attr>
+
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshPrepare']/parameter[@name='p0']" name="managedName">frame</attr>
+
+
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIReset']/parameter[@name='p0']" name="managedName">frame</attr>
+
+
 </metadata>
