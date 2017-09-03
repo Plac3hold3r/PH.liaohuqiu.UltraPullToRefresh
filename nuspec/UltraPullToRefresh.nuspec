@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>PH.liaohuqiu.UltraPullToRefresh</id>
-    <version>1.1011.0</version>
+    <version>1.1011.1</version>
     <title>liaohuqiu Ultra Pull To Refresh for Xamarin.Android</title>
     <authors>Plac3hold3r</authors>
     <owners>Plac3hold3r</owners>
