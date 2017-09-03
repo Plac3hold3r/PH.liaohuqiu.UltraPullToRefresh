@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>PH.liaohuqiu.UltraPullToRefresh</id>
+    <version>1.1011.0</version>
+    <title>liaohuqiu Ultra Pull To Refresh for Xamarin.Android</title>
+    <authors>Plac3hold3r</authors>
+    <owners>Plac3hold3r</owners>
+    <licenseUrl>https://github.com/Plac3hold3r/PH.liaohuqiu.UltraPullToRefresh/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Plac3hold3r/PH.liaohuqiu.UltraPullToRefresh</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Xamarin Android binding for liaohuqiu Ultra Pull To Refresh.</description>
+    <summary>A Xamarin Android binding for liaohuqiu Ultra Pull To Refresh.</summary>
+    <tags>xamarin, monodroid, C#, xamarin.android, android, pulltorefresh</tags>
+  </metadata>
+  <files>
+    <!-- Android -->
+    <file src="..\src\Binding\bin\Release\UltraPullToRefresh.dll" target="lib\MonoAndroid70\UltraPullToRefresh.dll" />
+    <file src="..\src\Binding\bin\Release\UltraPullToRefresh.pdb" target="lib\MonoAndroid70\UltraPullToRefresh.pdb" />
+  </files>
+</package>
