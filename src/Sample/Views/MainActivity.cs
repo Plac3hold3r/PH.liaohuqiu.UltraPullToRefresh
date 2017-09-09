@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Bumptech;
@@ -12,8 +11,9 @@ using System;
 namespace Sample.Views
 {
     [Activity(
-        Label = "Sample",
-        MainLauncher = true)]
+        MainLauncher = true,
+        Label = "@string/app_name",
+        Icon = "@mipmap/ic_launcher")]
     public class MainActivity : Activity, IPtrHandler, IRequestListener
     {
         private int currentImageIndex = -1;
@@ -34,7 +34,7 @@ namespace Sample.Views
             {
                 LayoutParameters = new PtrFrameLayout.LayoutParams(-1, -2)
             };
-            header.SetPadding(0, (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 15, Resources.DisplayMetrics), 0, (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 10, Resources.DisplayMetrics));
+            header.SetPadding(0, Resources.GetDimensionPixelSize(Resource.Dimension.header_top_padding), 0, Resources.GetDimensionPixelSize(Resource.Dimension.header_bottom_padding));
             header.SetUp(refreshFrame);
 
             refreshFrame.SetLoadingMinTime(1000);
