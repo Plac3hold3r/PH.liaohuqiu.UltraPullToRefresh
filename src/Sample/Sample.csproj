@@ -82,11 +82,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Animate\RotateAnimation.cs" />
     <Compile Include="Views\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\RentalsSunDrawable.cs" />
-    <Compile Include="Views\RentalsSunHeaderView.cs" />
+    <Compile Include="Views\Header\RentalsSunDrawable.cs" />
+    <Compile Include="Views\Header\RentalsSunHeaderView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -159,9 +160,6 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\sun.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image_border.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -179,13 +177,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\values\colors.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="Resources\values-zh\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\values\dimens.xml" />
   </ItemGroup>

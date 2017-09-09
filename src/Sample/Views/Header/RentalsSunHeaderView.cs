@@ -7,14 +7,14 @@ using Android.Views;
 using IN.Srain.Cube.Views.Ptr;
 using IN.Srain.Cube.Views.Ptr.Indicator;
 
-namespace Sample.Views
+namespace Sample.Views.Header
 {
-    [Register("sample.views." + nameof(RentalsSunHeaderView))]
+    [Register(nameof(RentalsSunHeaderView))]
     public class RentalsSunHeaderView : View, IPtrUIHandler
     {
-        private RentalsSunDrawable mDrawable;
-        private PtrFrameLayout mPtrFrameLayout;
-        private PtrTensionIndicator mPtrTensionIndicator;
+        private RentalsSunDrawable _rentalsdrawable;
+        private PtrFrameLayout _refreshptrFrameLayout;
+        private PtrTensionIndicator _ptrTensionIndicator;
 
         public RentalsSunHeaderView(Context context)
             : this(context, null)
@@ -32,21 +32,21 @@ namespace Sample.Views
             Init();
         }
 
-        public void SetUp(PtrFrameLayout ptrFrameLayout)
-        {
-            mPtrFrameLayout = ptrFrameLayout;
-            mPtrTensionIndicator = new PtrTensionIndicator();
-            mPtrFrameLayout.SetPtrIndicator(mPtrTensionIndicator);
-        }
-
         private void Init()
         {
-            mDrawable = new RentalsSunDrawable(Context, this);
+            _rentalsdrawable = new RentalsSunDrawable(Context, this);
+        }
+
+        public void SetUp(PtrFrameLayout ptrFrameLayout)
+        {
+            _refreshptrFrameLayout = ptrFrameLayout;
+            _ptrTensionIndicator = new PtrTensionIndicator();
+            _refreshptrFrameLayout.SetPtrIndicator(_ptrTensionIndicator);
         }
 
         protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
         {
-            int height = mDrawable.getTotalDragDistance() * 5 / 4;
+            int height = _rentalsdrawable.getTotalDragDistance() * 5 / 4;
             heightMeasureSpec = MeasureSpec.MakeMeasureSpec(height + PaddingTop + PaddingBottom, MeasureSpecMode.Exactly);
             base.OnMeasure(widthMeasureSpec, heightMeasureSpec);
         }
@@ -55,32 +55,32 @@ namespace Sample.Views
         {
             int pl = PaddingLeft;
             int pt = PaddingTop;
-            mDrawable.SetBounds(pl, pt, pl + right - left, pt + bottom - top);
+            _rentalsdrawable.SetBounds(pl, pt, pl + right - left, pt + bottom - top);
         }
 
         public void OnUIPositionChange(PtrFrameLayout frame, bool isUnderTouch, sbyte status, PtrIndicator ptrIndicator)
         {
-            float percent = mPtrTensionIndicator.OverDragPercent;
-            mDrawable.OffsetTopAndBottom(mPtrTensionIndicator.CurrentPosY);
-            mDrawable.SetPercent(percent);
+            float percent = _ptrTensionIndicator.OverDragPercent;
+            _rentalsdrawable.OffsetTopAndBottom(_ptrTensionIndicator.CurrentPosY);
+            _rentalsdrawable.SetPercent(percent);
             Invalidate();
         }
 
         public void OnUIRefreshBegin(PtrFrameLayout frame)
         {
-            mDrawable.Start();
-            float percent = mPtrTensionIndicator.OverDragPercent;
-            mDrawable.OffsetTopAndBottom(mPtrTensionIndicator.CurrentPosY);
-            mDrawable.SetPercent(percent);
+            _rentalsdrawable.Start();
+            float percent = _ptrTensionIndicator.OverDragPercent;
+            _rentalsdrawable.OffsetTopAndBottom(_ptrTensionIndicator.CurrentPosY);
+            _rentalsdrawable.SetPercent(percent);
             Invalidate();
         }
 
         public void OnUIRefreshComplete(PtrFrameLayout frame)
         {
-            float percent = mPtrTensionIndicator.OverDragPercent;
-            mDrawable.Stop();
-            mDrawable.OffsetTopAndBottom(mPtrTensionIndicator.CurrentPosY);
-            mDrawable.SetPercent(percent);
+            float percent = _ptrTensionIndicator.OverDragPercent;
+            _rentalsdrawable.Stop();
+            _rentalsdrawable.OffsetTopAndBottom(_ptrTensionIndicator.CurrentPosY);
+            _rentalsdrawable.SetPercent(percent);
             Invalidate();
         }
 
@@ -91,25 +91,21 @@ namespace Sample.Views
 
         public void OnUIReset(PtrFrameLayout frame)
         {
-            mDrawable.ResetOriginals();
+            _rentalsdrawable.ResetOriginals();
         }
 
         protected override void OnDraw(Canvas canvas)
         {
-            mDrawable.Draw(canvas);
-            float percent = mPtrTensionIndicator.OverDragPercent;
+            _rentalsdrawable.Draw(canvas);
+            float percent = _ptrTensionIndicator.OverDragPercent;
         }
 
         public override void InvalidateDrawable(Drawable drawable)
         {
-            if (drawable == mDrawable)
-            {
+            if (drawable == _rentalsdrawable)
                 Invalidate();
-            }
             else
-            {
                 base.InvalidateDrawable(drawable);
-            }
         }
     }
 }
