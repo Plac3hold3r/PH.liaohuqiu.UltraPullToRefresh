@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ultra PTR</string>
+    <string name="error_showing_image">Unable to download image</string>
+
+
+    <string-array name="image_urls">
+      <item>http://img4.duitang.com/uploads/blog/201407/07/20140707113856_hBf3R.thumb.jpeg</item>
+      <item>http://img4.duitang.com/uploads/blog/201311/04/20131104193715_NCexN.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/item/201408/09/20140809210610_iTSJx.thumb.jpeg</item>
+      <item>http://cdn.duitang.com/uploads/blog/201401/07/20140107223310_LH3Uy.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/item/201405/09/20140509222156_kVexJ.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/item/201306/14/20130614185903_raNR3.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/item/201112/11/20111211191621_HU4Bj.thumb.jpg</item>
+      <item>http://cdn.duitang.com/uploads/item/201408/07/20140807224553_VXaUc.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/blog/201407/29/20140729105929_GQLwC.thumb.jpeg</item>
+      <item>http://img4.duitang.com/uploads/blog/201408/04/20140804160432_LnFeB.thumb.jpeg</item>
+      <item>http://img5.duitang.com/uploads/blog/201408/04/20140804161101_JVJea.thumb.jpeg</item>
+    </string-array>
+  
+</resources>
