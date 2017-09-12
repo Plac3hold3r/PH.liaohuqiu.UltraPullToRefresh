@@ -12,9 +12,9 @@
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshPrepare']/parameter[@name='p0']" name="managedName">frame</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIReset']/parameter[@name='p0']" name="managedName">frame</attr>
 
-  <attr path="/api/package[@name='in.srain.cube.views.ptr']" name="managedName">UltraPullToRefresh</attr>
-  <attr path="/api/package[@name='in.srain.cube.views.ptr.header']" name="managedName">UltraPullToRefresh.Headers</attr>
-  <attr path="/api/package[@name='in.srain.cube.views.ptr.indicator']" name="managedName">UltraPullToRefresh.Indicators</attr>
-  <attr path="/api/package[@name='in.srain.cube.views.ptr.util']" name="managedName">UltraPullToRefresh.Utils</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']" name="managedName">Liaohuqiu.UltraPullToRefresh</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.header']" name="managedName">Liaohuqiu.UltraPullToRefresh.Headers</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.indicator']" name="managedName">Liaohuqiu.UltraPullToRefresh.Indicators</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.util']" name="managedName">Liaohuqiu.UltraPullToRefresh.Utils</attr>
 
 </metadata>

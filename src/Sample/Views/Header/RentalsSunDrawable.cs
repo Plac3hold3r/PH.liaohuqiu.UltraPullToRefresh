@@ -3,8 +3,8 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Views.Animations;
+using Liaohuqiu.UltraPullToRefresh.Utils;
 using System;
-using UltraPullToRefresh.Utils;
 
 namespace Sample.Views.Header
 {

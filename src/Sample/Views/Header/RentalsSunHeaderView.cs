@@ -4,8 +4,8 @@ using Android.Graphics.Drawables;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
-using UltraPullToRefresh;
-using UltraPullToRefresh.Indicators;
+using Liaohuqiu.UltraPullToRefresh;
+using Liaohuqiu.UltraPullToRefresh.Indicators;
 
 namespace Sample.Views.Header
 {
