@@ -4,8 +4,8 @@ using Android.Graphics.Drawables;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
-using IN.Srain.Cube.Views.Ptr;
-using IN.Srain.Cube.Views.Ptr.Indicator;
+using UltraPullToRefresh;
+using UltraPullToRefresh.Indicators;
 
 namespace Sample.Views.Header
 {

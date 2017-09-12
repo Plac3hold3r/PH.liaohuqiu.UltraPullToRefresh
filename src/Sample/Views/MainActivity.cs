@@ -5,9 +5,9 @@ using Android.Widget;
 using Bumptech;
 using Bumptech.Request;
 using Bumptech.Request.Target;
-using IN.Srain.Cube.Views.Ptr;
 using Sample.Views.Header;
 using System;
+using UltraPullToRefresh;
 
 namespace Sample.Views
 {

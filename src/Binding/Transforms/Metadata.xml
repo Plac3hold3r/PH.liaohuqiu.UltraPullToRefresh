@@ -2,24 +2,19 @@
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p0']" name="managedName">frame</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p1']" name="managedName">content</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='checkCanDoRefresh']/parameter[@name='p2']" name="managedName">header</attr>
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrHandler']/method[@name='onRefreshBegin']/parameter[@name='p0']" name="managedName">frame</attr>
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p0']" name="managedName">frame</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p1']" name="managedName">isUnderTouch</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p2']" name="managedName">status</attr>
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIPositionChange']/parameter[@name='p3']" name="managedName">ptrIndicator</attr>
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshBegin']/parameter[@name='p0']" name="managedName">frame</attr>
-
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshComplete']/parameter[@name='p0']" name="managedName">frame</attr>
-
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIRefreshPrepare']/parameter[@name='p0']" name="managedName">frame</attr>
-
-
   <attr path="/api/package[@name='in.srain.cube.views.ptr']/interface[@name='PtrUIHandler']/method[@name='onUIReset']/parameter[@name='p0']" name="managedName">frame</attr>
 
+  <attr path="/api/package[@name='in.srain.cube.views.ptr']" name="managedName">UltraPullToRefresh</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.header']" name="managedName">UltraPullToRefresh.Headers</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.indicator']" name="managedName">UltraPullToRefresh.Indicators</attr>
+  <attr path="/api/package[@name='in.srain.cube.views.ptr.util']" name="managedName">UltraPullToRefresh.Utils</attr>
 
 </metadata>
