@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding", "src\Binding\Binding.csproj", "{B0C8EC44-05A2-419B-ADCA-31E647B82646}"
 EndProject
@@ -21,8 +21,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C8EC44-05A2-419B-ADCA-31E647B82646}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40A5F17B-9EBF-4029-8296-D788EB7B4109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
